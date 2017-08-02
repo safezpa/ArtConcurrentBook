@@ -1,4 +1,4 @@
-package chapter01;
+package myThreadTest;
 
 public class JoinMain {
     public static void main(String[] args) throws InterruptedException {

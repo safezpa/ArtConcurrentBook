@@ -1,4 +1,4 @@
-package chapter01;
+package myThreadTest;
 
 public class DeadLock {
     private static Object A=new Object();
@@ -42,10 +42,11 @@ public class DeadLock {
             }
         });
 
-        t2.start();
-        t2.join();
+        //t2.start();
+        //t2.join();
+        t2.wait();
         t1.start();
-        t1.join();
+        //t1.join();
         System.out.println("in deadlock");
 
     }

@@ -1,4 +1,4 @@
-package chapter01;
+package myThreadTest;
 
 public class Synchronized {
     public static void main(String[] args) {

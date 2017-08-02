@@ -5,6 +5,7 @@
 package chapter06;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.UUID;
 
 /**
@@ -20,18 +21,47 @@ public class ConcurrentPutHashMap {
         Thread t = new Thread(new Runnable() {
             @Override
             public void run() {
+                Thread[] th=new Thread[10000];
+
                 for (int i = 0; i < 10000; i++) {
-                    new Thread(new Runnable() {
+                   th[i]= new Thread(new Runnable() {
                         @Override
                         public void run() {
                             map.put(UUID.randomUUID().toString(), "");
                         }
-                    }, "ftf" + i).start();
+                    }, "ftf" + i);
+                     th[i].start();
+
                 }
+
+                for (int i = 0; i < 10000; i++) {
+                    try {
+                        //th[i].join();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+
+                }
+
+                for (int i = 0; i <10000 ; i++) {
+                    System.out.println(th[i].getState());
+                }
+
             }
         }, "ftf");
         t.start();
+
         t.join();
+        System.out.println(t.getState());
+        System.out.println("finished put");
+        for (Map.Entry en:map.entrySet()
+             ) {
+
+            System.out.println(en.getKey()+":  "+en.getValue());
+
+        }
     }
+
+
 
 }

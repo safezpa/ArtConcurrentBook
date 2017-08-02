@@ -4,5 +4,21 @@
     <file url="file://$PROJECT_DIR$/src/chapter01/ConcurrencyTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/chapter01/DeadLockDemo.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/chapter02/Counter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/chapter04/DefaultThreadPool.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/chapter04/MultiThread.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/chapter04/SimpleHttpServer.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/chapter04/ThreadState.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/chapter04/WaitNotify.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/chapter05/ProcessData.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/chapter06/ConcurrentPutHashMap.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/chapter06/CountTask.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/chapter08/CountDownLatchTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/chapter08/CountDownLatchTest2.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/chapter08/CyclicBarrierTest3.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/chapter08/ExchangerTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/chapter08/JoinCountDownLatchTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/chapter10/ConcurrentTask.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/chapter11/IMsgQueue.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/chapter11/MsgQueueManager.java" charset="GBK" />
   </component>
 </project>
